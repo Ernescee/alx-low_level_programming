@@ -1,26 +1,29 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * *_strcat ->tjis is a function strcat
+ * _strcat - this is a function strcat
  * @dest:first param
  * @src:second param
- * Return: a string
+ *
+ * Return: A pointer to the resulting a string dest
  */
 char *_strcat(char *dest, char *src)
 {
-	int len = 0, i;
+	int dlen = 0, i;
 
-	while (deat[len])
-		len++;
-
-	for (i = 0; src[i] !='\0'; i++)
+	while (deat[dlen])
 	{
-	dest[len] =src[i];
-	len += 1;
-
+		dlen++;
 	}
-	dest[len] = '\0';
-	return (dest)
+	for (i = 0; src[i] != 0; i++)
+	{
+	dest[dlen] = src[i];
+	dlen ++;
+	}
+
+	dest[dlen] = '\0';
+	return (dest);
 }
 
 
